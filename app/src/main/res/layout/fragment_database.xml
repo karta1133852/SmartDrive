@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Spinner
+            android:id="@+id/spinnerIC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+        <Spinner
+            android:id="@+id/spinnerPhase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <!--
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" /> -->
+
+        <Button
+            android:id="@+id/btn_searchData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜尋"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="路口名稱"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <TextView
+            android:id="@+id/txt_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秒數資訊"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" >
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_width="240dp"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/imgPanel1_test"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:src="@drawable/panel_four" />
+            <ImageView
+                android:id="@+id/imgLight0_test"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/red" />
+            <ImageView
+                android:id="@+id/imgLight1_test"
+                android:layout_marginStart="60dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/yellow" />
+            <ImageView
+                android:id="@+id/imgLight2_test"
+                android:layout_marginStart="120dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/straight" />
+            <ImageView
+                android:id="@+id/imgLight3_test"
+                android:layout_marginStart="180dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/right" />
+
+        </FrameLayout>
+        <TextView
+            android:id="@+id/txtCountdown1_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:textSize="36sp"
+            android:text="20"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout1_test">
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_width="240dp"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/imgPanel2_test"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:src="@drawable/panel_four" />
+            <ImageView
+                android:id="@+id/imgLight4_test"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/red" />
+            <ImageView
+                android:id="@+id/imgLight5_test"
+                android:layout_marginStart="60dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/yellow" />
+            <ImageView
+                android:id="@+id/imgLight6_test"
+                android:layout_marginStart="120dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/left" />
+            <ImageView
+                android:id="@+id/imgLight7_test"
+                android:layout_marginStart="180dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/green" />
+
+        </FrameLayout>
+        <TextView
+            android:id="@+id/txtCountdown2_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:textSize="36sp"
+            android:text="20"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintHorizontal_bias="1"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
